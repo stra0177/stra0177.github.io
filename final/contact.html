@@ -2,8 +2,114 @@
 <html>
 <head>
 	<title>Contact Page</title>
+	<!-- name of this page -->
+
+	<!-- Link to the css file -->
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<!-- style tag to help create an embeded styles for CSS -->
+
+	<style type="text/css">
+		h1,h2 {
+			color: black;
+			text-align: left;
+		}
+		p {
+			color: purple;
+			font-size: 19px;
+		}
+
+	</style>
 </head>
 <body>
-<h1>Contact Page</h1>
+	<body>
+	<!-- Header starts -->
+	<HEADER id="page-header">
+		<h1 id="header-one" class="heading">Meromiz</h1>
+		<!-- This is my logo -->
+
+		<nav id="main-navigation" class="navigation">
+			<ul>
+				<li>
+					<a href="About.html" title="About" target="_blank">About</a>
+				</li>
+				<li>
+					<a href="Contact.html" title="Contact" target="_blank">Contact</a>
+				</li>
+				<li>
+					<a href="Travel Packs.html" title="Travel Packs" target="_blank">Travel Packs</a>
+				</li>
+				<li>
+					<a href="Reviews.html" title="Reviews" target="_blank">Reviews</a>
+				</li>
+			</ul>
+			</nav>
+			<!-- Nav end -->
+		<h2 id="header-two" class="heading">Contact Us</h2>
+		<!-- name for this page -->
+	</HEADER>
+
+	<!-- Header ends -->
+
+	<div class="wrapper">
+	<div class="flex-container" >
+		<form action="action_page.php">
+			
+			<label for="Email">Email</label>
+			<input type="text" name="Email" placeholder="John.S@gmai...">
+
+			<label>Full Name</label>
+			<input type="text" name="fullname" placeholder="John Smith">
+				
+				<!-- for the Radio buttons -->
+				<form action="">
+  
+  					<input type="radio" name="gender" value="male"> Male<br>
+ 					 <input type="radio" name="gender" value="female"> Female<br>
+ 					 <input type="radio" name="gender" value="other"> Other
+					</form>
+
+			<label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+		</form>
+
+			<!-- for my Checkboxs: time to travel with us -->
+		<form action="">
+		<input type="checkbox" name="Season" value="Summer">Summer<br>
+		<input type="checkbox" name="Season" value="Winter">Winter<br>
+		<input type="checkbox" name="Season" value="Fall">Fall <br>
+		<input type="checkbox" name="Season" value="Spring">Spring <br>
+</form>
+		
+
+		<!-- SUBMIT BUTTON -->
+		<input type="submit" value="Submit">
+			</form>
+		</section>
+	</div>
+
+
+	<!-- Footer starts -->
+	<footer id="footer" class="footer">
+		<section>
+			<p>Copyright &copy; 2018 Strawbridge</p>
+		</section>
+				<!-- social media logos -->
+				<p align = "right">
+				<a href="http://instagram.com/"> 
+					<img src="images/instagram.png" class="instalogo" alt="instagram logo">
+				</a>
+				<a href="http://youtube.com/"> 
+					<img src="images/youtube.png" class="youlogo" alt="youtube logo">
+				</a>
+				<a href="http://twitter.com/"> 
+					<img src="images/twitter.png" class="twittlogo" alt="twitter logo">
+				</a>
+				<a href="http://facebook.com/"> 
+					<img src="images/facebook.png" class="fblogo" alt="facebook logo">
+				</a>
+			</p>
+
+			
+	</footer>
 </body>
 </html>

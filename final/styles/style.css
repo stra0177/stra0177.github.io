@@ -1,9 +1,153 @@
-/*This file would contain the styles for all the pages*/
+/*Shared css*/
 
-/*Shared Styles*/
+/*CSS clearfix*/
+.clearfix {
+    overflow: auto;
+}
 
+.clearflow:after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
-/*Home page styles*/
+@font-face {
+    font-family: 'Gugi', cursive;
+}
 
+div {
+    font-family: Gugi;
+} 
 
-/*Third Page styles*/
+@font-face {
+    font-family: 'alex-brush';
+}
+
+div {
+    font-family: 'alex-brush';
+}
+
+ ul {
+/*for my text book*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #c0c0c0;
+
+}
+li {
+    width: 25%;
+    float: left;
+}
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*background color of the navagations*/
+li a {
+    background-color: purple;
+} 
+
+/*font for all text*/
+body {
+    font-family: "Arial";
+}
+/*beginging the mobile*/
+
+h1 {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 480px){
+
+  h2 {
+   font-size: 19px;
+  }
+
+}
+/*end of mobile*/
+/*begining of tablet*/
+h1 {
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    h2 {
+        font-size: 19px;
+    }
+}
+/*end of tablet*/
+
+/*Homepage css*/
+#page1 .myDiv 
+/*the text books again*/
+
+.flex-container {
+                display: flex;
+                background-color: Silver;
+            }
+
+            .flex-container > div {
+                background-color: #c0c0c0;
+                color: darkblue;
+                margin: 10px;
+                padding: 10px;
+                font-size: 20px;
+            } 
+ 
+/*Contact css*/
+
+/*the text books again*/
+.flex-container {
+                background-color: purple;
+            }
+
+            .flex-container > div
+                input[type=text], select, textarea {
+                width: 100%; 
+                padding: 12px; 
+                border: 1px solid black; 
+                border-radius: 4px; 
+                box-sizing: border-box; 
+                margin-top: 6px;
+                margin-bottom: 16px; 
+                resize: vertical
+            }
+/*to get the background colour to change i had to create both the flex-box and the input boxs*/
+
+/*stuff to content email and name and message box*/
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid black; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical 
+    ;font-size: 20px;
+}
+
+/*for my submit button*/
+input[type=submit] {
+    background-color: #c0c0c0;
+    color: white;
+    padding: 12px 20px;
+    border: solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*when i hover the colour should change*/
+input[type=submit]:hover {
+    background-color: orange;
+}
+
+/*For Review page*/
+
